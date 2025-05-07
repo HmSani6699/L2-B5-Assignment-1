@@ -74,4 +74,46 @@
     myCar.getModel();  // Output: "Model: Corolla"
 
 
+
+
+    //==============> Problem 5 <==============//
+
+      function processValue(value: string | number): number{
+        return typeof value === "string" ? value?.length : value * 2;
+    }
+
+    processValue("hello");    // Output: 5
+    processValue(10);         // Output: 20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //
 }

@@ -3,39 +3,12 @@
 
     // ts-node-dev --respawn --transpile-only server.ts
 
-    class Vehicle {
-      public  make: string;
-      public  year: number;
-
-        constructor(make: string, year: number) {
-            this.make = make;
-            this.year = year;
-        }
-
-        getInfo() {
-            return `Make: ${this.make}, Year: ${this.year}`
-        }
+    function processValue(value: string | number): number{
+        return typeof value === "string" ? value?.length : value * 2;
     }
+
+    console.log(processValue('hallo'));
     
-
-    class Car extends Vehicle {
-        private model: string;
-
-        constructor(make: string, year: number, model: string) {
-            super(make, year);
-            this.model = model;
-        }
-
-        getModel() {
-            return `Model: ${this.model}`
-        }
-    }
-
-
-
-const myCar = new Car("Toyota", 2020, "Corolla");
-console.log(myCar.getInfo());   // Output: "Make: Toyota, Year: 2020"
-console.log(myCar.getModel());  // Output: "Model: Corolla"
 
     
     
