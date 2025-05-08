@@ -6,13 +6,11 @@
 
 We can simply say that interface and type are two important and commonly used features of TypeScript. They are mainly used to define structure. Both work almost the same, but there are some differences in usage, such as:
 
-> They have different writing syntaxes, so you have to write two different syntaxes.
+- They have different writing syntaxes, so you have to write two different syntaxes.
+- We can use interfaces only on non-primitive data types, while types can be used on any data type.
+- If we write two interfaces with the same name, it will not give us any error and will connect the two, but if we write two types with the same name, it will give us an error.
 
-> We can use interfaces only on non-primitive data types, while types can be used on any data type.
-
-> If we write two interfaces with the same name, it will not give us any error and will connect the two, but if we write two types with the same name, it will give us an error.
-
-1. **They have different writing syntaxes, so you have to write two different syntaxes.**
+> **They have different writing syntaxes, so you have to write two different syntaxes.**
 
 **Example: Interface**
 
@@ -34,7 +32,7 @@ type MyInfo = {
 };
 ```
 
-1. **We can use interfaces only on non-primitive data types, while types can be used on any data type**.
+> **We can use interfaces only on non-primitive data types, while types can be used on any data type**.
 
 **Example: Types**
 
@@ -63,7 +61,7 @@ interface NumberArray {
 }
 ```
 
-1. If we write two interfaces with the same name, it will not give us any error and will connect the two, but if we write two types with the same name, it will give us an error.
+> If we write two interfaces with the same name, it will not give us any error and will connect the two, but if we write two types with the same name, it will give us an error.
 
 **Example: Types**
 
