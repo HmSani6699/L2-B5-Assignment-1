@@ -1,10 +1,10 @@
 {
-    //==============> Problem 1 <==============//
+   
      function formatString(input: string, toUpper?: boolean) : string {
         return  toUpper === true ? input.toUpperCase(): toUpper === false ? input.toLowerCase():input.toUpperCase();
     };
 
-    //==============> Problem 2 <==============//
+ 
     function filterByRating(items: {title: string;rating: number;}[]): {
         title: string;
         rating: number;
@@ -12,16 +12,16 @@
         return items.filter((item) => item.rating >= 4);
     };
 
-    //==============> Problem 3 <==============//
+  
     function concatenateArrays<T>(...arrays: T[][]): T[]{
         const result = arrays.reduce((prev, current) => [...prev, ...current]);
         return result;
     }
 
-    //==============> Problem 4 <==============//
-      class Vehicle {
-      private  make: string;
-      private  year: number;
+    
+    class Vehicle {
+    private  make: string;
+    private  year: number;
 
         constructor(make: string, year: number) {
             this.make = make;
@@ -46,12 +46,12 @@
         }
     }
 
-    //==============> Problem 5 <==============//
+    
     function processValue(value: string | number): number{
         return typeof value === "string" ? value?.length : value * 2;
     }
 
-    //==============> Problem 6 <==============//
+    
     interface Product {
         name: string;
         price: number;
@@ -62,7 +62,7 @@
         return result || null
     }
     
-    //==============> Problem 7 <==============//
+  
     enum Day {
         Monday,
         Tuesday,
@@ -81,7 +81,7 @@
         }
     }
 
-    //==============> Problem 8 <==============//
+   
      async function squareAsync(n: number): Promise<number>{
         return new Promise<number>((resolve, reject) => {
            if (n && n >0) {
